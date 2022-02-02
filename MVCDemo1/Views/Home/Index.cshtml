@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Message = "MVCDemo";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MVC Demo</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach(string strName in (List<string>)ViewData["nameList"])
+            {
+                <li>@strName</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
